@@ -12,7 +12,7 @@ app.innerHTML = `
           Build a brand around smart pet products, AI-powered care, or the next Pet Tech marketplace.
         </p>
         <div class="actions">
-          <a class="button primary" href="mailto:hello@d0g.ai">Contact for offer</a>
+          <a class="button primary" href="#form">Contact for offer</a>
           <a class="button secondary" href="#why">Why this domain</a>
         </div>
       </div>
