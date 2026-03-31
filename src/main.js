@@ -51,7 +51,7 @@ app.innerHTML = `
         >
           <label>
             <span>Name</span>
-            <input name="name" type="text" autocomplete="name" required />
+            <input name="name" type="text" autocomplete="name" />
           </label>
           <label>
             <span>Email</span>
