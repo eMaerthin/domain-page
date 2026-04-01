@@ -73,3 +73,39 @@ app.innerHTML = `
 // GitHub Pages root/subpath compatibility: force correct relative image URL.
 const heroImg = app.querySelector('img[alt="Happy dog in natural light"]');
 if (heroImg) heroImg.src = './dog-hero.png';
+
+const trackEvent = (eventName, params = {}) => {
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', eventName, params);
+  }
+};
+
+const primaryCta = app.querySelector('a.button.primary[href="#form"]');
+if (primaryCta) {
+  primaryCta.addEventListener('click', () => {
+    trackEvent('click_contact_for_offer', {
+      location: 'hero',
+      target: '#form',
+    });
+  });
+}
+
+const whyCta = app.querySelector('a.button.secondary[href="#why"]');
+if (whyCta) {
+  whyCta.addEventListener('click', () => {
+    trackEvent('click_why_this_domain', {
+      location: 'hero',
+      target: '#why',
+    });
+  });
+}
+
+const contactForm = app.querySelector('.contact-form');
+if (contactForm) {
+  contactForm.addEventListener('submit', () => {
+    trackEvent('submit_contact_form', {
+      location: 'form',
+      form_id: 'contact-offer',
+    });
+  });
+}
