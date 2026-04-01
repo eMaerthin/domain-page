@@ -1,8 +1,4 @@
-import './style.css';
-
-const app = document.querySelector('#app');
-
-app.innerHTML = `
+(function(){const r=document.createElement("link").relList;if(r&&r.supports&&r.supports("modulepreload"))return;for(const e of document.querySelectorAll('link[rel="modulepreload"]'))o(e);new MutationObserver(e=>{for(const t of e)if(t.type==="childList")for(const a of t.addedNodes)a.tagName==="LINK"&&a.rel==="modulepreload"&&o(a)}).observe(document,{childList:!0,subtree:!0});function n(e){const t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),e.crossOrigin==="use-credentials"?t.credentials="include":e.crossOrigin==="anonymous"?t.credentials="omit":t.credentials="same-origin",t}function o(e){if(e.ep)return;e.ep=!0;const t=n(e);fetch(e.href,t)}})();const i=document.querySelector("#app");i.innerHTML=`
   <main class="page">
     <section class="hero">
       <div class="copy">
@@ -68,8 +64,4 @@ app.innerHTML = `
       </div>
     </section>
   </main>
-`;
-
-// GitHub Pages root/subpath compatibility: force correct relative image URL.
-const heroImg = app.querySelector('img[alt="Happy dog in natural light"]');
-if (heroImg) heroImg.src = './dog-hero.png';
+`;const s=i.querySelector('img[alt="Happy dog in natural light"]');s&&(s.src="./dog-hero.png");
