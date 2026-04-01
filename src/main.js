@@ -18,7 +18,7 @@ app.innerHTML = `
       </div>
       <div class="card" aria-label="pet tech concept">
         <img
-          src="/dog-hero.png"
+          src="./dog-hero.png"
           alt="Happy dog in natural light"
         />
       </div>
