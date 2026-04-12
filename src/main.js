@@ -18,7 +18,7 @@ app.innerHTML = `
       </div>
       <div class="card" aria-label="pet tech concept">
         <img
-          src="./dog-hero.png"
+          src="./public/dog-hero.png"
           alt="Happy dog in natural light"
         />
       </div>
@@ -70,9 +70,8 @@ app.innerHTML = `
   </main>
 `;
 
-// GitHub Pages root/subpath compatibility: force correct relative image URL.
 const heroImg = app.querySelector('img[alt="Happy dog in natural light"]');
-if (heroImg) heroImg.src = './dog-hero.png';
+if (heroImg) heroImg.src = './public/dog-hero.png';
 
 const trackEvent = (eventName, params = {}) => {
   if (typeof window.gtag === 'function') {
