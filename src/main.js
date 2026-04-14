@@ -19,7 +19,7 @@ app.innerHTML = `
       <div class="card" aria-label="pet tech concept">
         <img
           src="./public/dog-hero.png"
-          alt="Happy dog in natural light"
+          alt="Happy dog with futuristic pet-tech overlay"
         />
       </div>
     </section>
@@ -70,7 +70,7 @@ app.innerHTML = `
   </main>
 `;
 
-const heroImg = app.querySelector('img[alt="Happy dog in natural light"]');
+const heroImg = app.querySelector('img[alt="Happy dog with futuristic pet-tech overlay"]');
 if (heroImg) heroImg.src = './public/dog-hero.png';
 
 const trackEvent = (eventName, params = {}) => {

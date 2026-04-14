@@ -17,7 +17,8 @@ h1 { font-size: clamp(3rem, 7vw, 6rem); line-height: .95; margin: 0; max-width: 
 .button { padding: 14px 20px; border-radius: 999px; border: 1px solid rgba(255,255,255,.14); }
 .primary { background: #f4f7fb; color: #08111f; font-weight: 700; }
 .card, .grid article { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); border-radius: 24px; backdrop-filter: blur(14px); }
-.card img { display: block; width: 100%; height: 560px; object-fit: cover; border-radius: 24px; }
+.card { padding: 18px; }
+.card img { display: block; width: 100%; height: auto; aspect-ratio: 1 / 1; object-fit: contain; border-radius: 16px; background: #0a1020; }
 .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 28px; }
 .grid article { padding: 22px; }
 .grid p { color: #c6d1e3; }
@@ -48,5 +49,5 @@ input:focus, textarea:focus { border-color: rgba(140,180,255,.55); }
 .fineprint { margin: 4px 0 0; color: #9fb1d1; font-size: .9rem; max-width: 60ch; }
 @media (max-width: 860px) {
   .hero, .grid { grid-template-columns: 1fr; }
-  .card img { height: 360px; }
+  .card img { aspect-ratio: 1 / 1; height: auto; }
 }
