@@ -1,0 +1,2 @@
+To resume this session, run: droid --resume 8051ba53-1a30-4f38-a66d-a96632dceefe
+

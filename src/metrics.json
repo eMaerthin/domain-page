@@ -1,0 +1,30 @@
+{
+  "title": "Zero-day operational timing",
+  "unit": "days",
+  "series": [
+    {
+      "label": "Discovery cadence",
+      "value": 17,
+      "kind": "days",
+      "evidence": "On average, a new \u201cin the wild\u201d exploit is discovered every 17 days",
+      "source": "Google Project Zero \u2014 0day \"In the Wild\"",
+      "url": "https://projectzero.google/0day.html"
+    },
+    {
+      "label": "Average patch time",
+      "value": 15,
+      "kind": "days",
+      "evidence": "it takes 15 days on average to patch a vulnerability",
+      "source": "Google Project Zero \u2014 0day \"In the Wild\"",
+      "url": "https://projectzero.google/0day.html"
+    }
+  ],
+  "note": "Two compatible timing metrics extracted from the same public source. They are not a chronological time series.",
+  "generatedAt": "2026-08-26T15:07:40.903578+00:00",
+  "references": [
+    {
+      "name": "Google Project Zero \u2014 0day \"In the Wild\"",
+      "url": "https://projectzero.google/0day.html"
+    }
+  ]
+}

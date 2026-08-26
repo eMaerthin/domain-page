@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "data": "python3 scripts/scrape_trends.py",
     "build": "vite build",
     "preview": "vite preview"
   },
